@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-09 11:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: core/settings.py:122
+msgid "Russian"
+msgstr "Русский"
+
+#: landing/models.py:9
+msgid "on sale"
+msgstr "в продаже"
+
+#: landing/models.py:10
+msgid "unavailable"
+msgstr "недоступен"
+
+#: landing/models.py:13 landing/models.py:62 landing/models.py:83
+msgid "name"
+msgstr "имя"
+
+#: landing/models.py:14
+msgid "size"
+msgstr "размер"
+
+#: landing/models.py:15
+msgid "room_number"
+msgstr "количество комнат"
+
+#: landing/models.py:16
+msgid "price"
+msgstr "цена"
+
+#: landing/models.py:17
+msgid "description"
+msgstr "описание"
+
+#: landing/models.py:18
+msgid "latitude"
+msgstr "широта"
+
+#: landing/models.py:19
+msgid "longtitude"
+msgstr "долгота"
+
+#: landing/models.py:20
+msgid "address"
+msgstr "адрес"
+
+#: landing/models.py:21 landing/models.py:65 landing/models.py:87
+msgid "status"
+msgstr "статус"
+
+#: landing/models.py:24 landing/models.py:86
+msgid "apartment"
+msgstr "квартира"
+
+#: landing/models.py:25
+msgid "apartments"
+msgstr "апартаменты"
+
+#: landing/models.py:31
+msgid "file"
+msgstr "файл"
+
+#: landing/models.py:32
+msgid "main"
+msgstr "основной"
+
+#: landing/models.py:33 landing/models.py:43
+msgid "images"
+msgstr "изображений"
+
+#: landing/models.py:42 landing/models.py:46
+msgid "image"
+msgstr "изображение"
+
+#: landing/models.py:52
+msgid "banner"
+msgstr "баннер"
+
+#: landing/models.py:53
+msgid "banners"
+msgstr "баннеры"
+
+#: landing/models.py:57 landing/models.py:77
+msgid "new"
+msgstr "новый"
+
+#: landing/models.py:58 landing/models.py:78
+msgid "connected"
+msgstr "связанный"
+
+#: landing/models.py:59 landing/models.py:79
+msgid "Pending"
+msgstr "В ожидании"
+
+#: landing/models.py:63 landing/models.py:84
+msgid "phone_number"
+msgstr "номер телефона"
+
+#: landing/models.py:64 landing/models.py:85
+msgid "message"
+msgstr "сообщение"
+
+#: landing/models.py:71
+msgid "user form"
+msgstr "форма пользователя"
+
+#: landing/models.py:72
+msgid "user forms"
+msgstr "пользовательские формы"
+
+#: landing/models.py:94
+#, fuzzy
+#| msgid "apartments"
+msgid "apartment user form"
+msgstr "апартаменты"
+
+#: landing/models.py:95
+#, fuzzy
+#| msgid "apartments"
+msgid "apartment user forms"
+msgstr "апартаменты"
