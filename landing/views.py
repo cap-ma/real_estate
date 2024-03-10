@@ -43,18 +43,18 @@ class BannerListView(ListAPIView):
     queryset=Banner.objects.all()
     serializer_class=BannerSerializer
 
-    @swagger_auto_schema(tags=['Landing'])
-    @log_db_queries
-    def get(self,request,*args,**kwargs):
-        print('this is cache-----',cache)
-        if "banners" in cache:
-            data=cache.get('banners')
-            return Response(data)
-        else:
-            queryset=Banner.objects.all()
-            serializer_class=BannerSerializer(queryset,many=True)
-            cache.set("banners",serializer_class.data,timeout=30)
-            return super().get(request,*args,**kwargs)
+    # @swagger_auto_schema(tags=['Landing'])
+    # @log_db_queries
+    # def get(self,request,*args,**kwargs):
+    #     print('this is cache-----',cache)
+    #     if "banners" in cache:
+    #         data=cache.get('banners')
+    #         return Response(data)
+    #     else:
+    #         queryset=Banner.objects.all()
+    #         serializer_class=BannerSerializer(queryset,many=True)
+    #         cache.set("banners",serializer_class.data,timeout=30)
+    #         return super().get(request,*args,**kwargs)
         
     
 class UserFormCreateView(CreateAPIView):
