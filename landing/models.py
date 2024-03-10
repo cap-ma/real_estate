@@ -30,7 +30,7 @@ class Apartment(models.Model):
 class Images(models.Model):
     file=models.ImageField(_("file"),upload_to='media/apartments')
     main=models.BooleanField(_("main"),default=False)
-    apartment=models.ForeignKey(Apartment,on_delete=models.DO_NOTHING,related_name=_('images'))
+    apartment=models.ForeignKey(Apartment,on_delete=models.DO_NOTHING,related_name='images')
 
     def __str__(self) -> str:
         return f"{self.main} and {self.apartment}"
