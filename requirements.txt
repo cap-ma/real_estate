@@ -1,7 +1,9 @@
 asgiref==3.7.2
 async-timeout==4.0.3
-backports.zoneinfo;python_version<"3.9"
+backports.zoneinfo==0.2.1
 Django==4.2.11
+django-cors-headers==4.3.1
+django-debug-toolbar==4.3.0
 django-redis==5.4.0
 djangorestframework==3.14.0
 drf-yasg==1.21.7
