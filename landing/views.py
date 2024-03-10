@@ -41,6 +41,7 @@ class ApartmentDetailView(RetrieveAPIView):
     
 class BannerListView(ListAPIView):
     queryset=Banner.objects.all()
+    serializer_class=BannerSerializer
 
     @swagger_auto_schema(tags=['Landing'])
     @log_db_queries
