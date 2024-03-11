@@ -46,7 +46,8 @@ class Banner(models.Model):
     image=models.ImageField(_("image"),upload_to="media/banner")
 
     def __str__(self) -> str:
-        return self.image
+        return self.image.path
+    
     
     class Meta:
         verbose_name=_("banner")
