@@ -4,7 +4,7 @@ from django.core.cache import cache
 from rest_framework.generics import ListAPIView,CreateAPIView,RetrieveAPIView
 from .models import Apartment,Banner,UserForm,ApartmentUserForm
 from .serializers import ApartmentListSerializer,ApartmentDetailSerializer,BannerSerializer,\
-    UserFormSerializer,ApartmentUserFormSerializer
+    UserFormSerializer,ApartmentUserFormSerializer,ApartmentLocationSerializer
 from rest_framework.response import Response
 import time
 
@@ -66,7 +66,10 @@ class AparetmentUserFormCreateView(CreateAPIView):
     serializer_class=ApartmentUserFormSerializer
 
 
-
+class GetLocationById(RetrieveAPIView):
+    queryset=Apartment.objects.all()
+    serializer_class=ApartmentLocationSerializer
+    lookup_field="pk"
     
     
 

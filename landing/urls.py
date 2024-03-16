@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import ApartmentListView,ApartmentDetailView,BannerListView,UserFormCreateView,AparetmentUserFormCreateView
+from .views import ApartmentListView,ApartmentDetailView,BannerListView,\
+    UserFormCreateView,AparetmentUserFormCreateView,GetLocationById
 
 urlpatterns=[
     path('apartment-list',ApartmentListView.as_view(),name='apartment-list'),
@@ -7,4 +8,5 @@ urlpatterns=[
     path('banner-list',BannerListView.as_view(),name='banner-list'),
     path('user-form',UserFormCreateView.as_view(),name='user-form'),
     path('apartment-user-form',AparetmentUserFormCreateView.as_view(),name='apartment-form'),
+    path('get-location-by-id/<int:pk>',GetLocationById.as_view(),name='location')
 ]

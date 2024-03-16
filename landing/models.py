@@ -26,6 +26,14 @@ class Apartment(models.Model):
 
     def __str__(self) -> str:
         return self.name
+    
+class MobileImage(models.Model):
+    file=models.ImageField(_("file"),upload_to='media/apartments')
+    main=models.BooleanField(_("main"),default=False)
+    apartment=models.ForeignKey(Apartment,on_delete=models.DO_NOTHING,related_name='mobile_images')
+
+    def __str__(self) -> str:
+        return f"{self.main} and {self.apartment}"
 
 class Images(models.Model):
     file=models.ImageField(_("file"),upload_to='media/apartments')
